@@ -17,7 +17,9 @@
            android:layout_height="wrap_content"
            />
 
-        <Button android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnGLESInit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
