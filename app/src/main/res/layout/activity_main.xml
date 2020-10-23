@@ -12,22 +12,35 @@
         android:layout_height="match_parent">
 
        <Button
+           android:text="Started"
            android:id="@+id/btnGettingStarted"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            />
 
         <Button
+            android:text="init"
             android:id="@+id/btnGLESInit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+        <Button
+            android:text="slide1"
+            android:id="@+id/btnSlideShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="slide2"
+            android:id="@+id/btnSlideShow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSlideShow3"
+            android:text="@string/gpuimage"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+            android:id="@+id/btnDrawTriangle"
+            android:text="@string/tamgiac"
             android:layout_height="wrap_content"/>
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

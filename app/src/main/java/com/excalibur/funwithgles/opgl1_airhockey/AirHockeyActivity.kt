@@ -55,7 +55,7 @@ class AirHockeyActivity : AppCompatActivity() {
             glSurfaceView?.setEGLContextClientVersion(2)
 
             // Assign our renderer.
-            glSurfaceView?.setRenderer(AirHockeyRenderer())
+            //glSurfaceView?.setRenderer(AirHockeyRenderer())
             true
         } else {
             /*
