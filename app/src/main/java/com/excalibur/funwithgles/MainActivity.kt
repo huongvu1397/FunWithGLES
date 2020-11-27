@@ -7,6 +7,7 @@ import com.excalibur.funwithgles.chp1.GettingStarted
 import com.excalibur.funwithgles.drawbitmap.SlideShowActivity
 import com.excalibur.funwithgles.drawtriangle.DrawTriangleActivity
 import com.excalibur.funwithgles.gpuimageslide.GPUImageSlideActivity
+import com.excalibur.funwithgles.opengl_slide_show.HomeSlideActivity
 import com.excalibur.funwithgles.opgl1_init.InitOpenGLActivity
 import com.excalibur.funwithgles.slideshow.edit.EditActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnDrawTriangle.setOnClickListener {
             startActivity(Intent(this,DrawTriangleActivity::class.java))
+        }
+        btnSlide3.setOnClickListener {
+            startActivity(Intent(this,HomeSlideActivity::class.java))
         }
     }
 }

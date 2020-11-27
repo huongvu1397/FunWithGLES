@@ -15,6 +15,5 @@ class DrawTriangleActivity : AppCompatActivity() {
         // as the ContentView for this Activity.
         gLView = MyGLSurfaceView(this)
         setContentView(gLView)
-        //setContentView(R.layout.activity_draw_triangle)
     }
 }
