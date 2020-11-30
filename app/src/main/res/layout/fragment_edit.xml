@@ -7,6 +7,7 @@
     tools:context=".opengl_slide_show.ui.EditFragment">
 
     <RelativeLayout
+        android:id="@+id/toolBar"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize">
@@ -19,12 +20,50 @@
 
     </RelativeLayout>
 
+    <FrameLayout
+        android:id="@+id/previewView"
+        app:layout_constraintBottom_toTopOf="@id/guideline_60"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar"
+        android:layout_height="0dp">
+
+<!--        <com.excalibur.funwithgles.opengl_slide_show.glbase.OGLView-->
+<!--            android:id="@+id/oglView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+        <TextureView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_60"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_90"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+       />
+
     <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/guideline_90"
         android:id="@+id/rcvList"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_100sdp"/>
+        android:layout_height="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

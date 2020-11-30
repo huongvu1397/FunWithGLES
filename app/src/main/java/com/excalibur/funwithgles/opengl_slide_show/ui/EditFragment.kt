@@ -14,6 +14,8 @@ class EditFragment : BaseFragment() {
 
     private lateinit var infoPathAdapter : InfoPathAdapter
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,6 +26,10 @@ class EditFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initLinkAdapter()
+    }
+
+    private fun initLinkAdapter(){
         infoPathAdapter = InfoPathAdapter()
         rcvList.adapter = infoPathAdapter
         infoPathAdapter.submitList(mainViewModel.listPath.value)
