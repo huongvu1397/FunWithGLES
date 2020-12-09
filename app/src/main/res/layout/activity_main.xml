@@ -47,7 +47,10 @@
             android:text="@string/slide3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnSDMaid"
+            android:text="@string/sdmaid"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

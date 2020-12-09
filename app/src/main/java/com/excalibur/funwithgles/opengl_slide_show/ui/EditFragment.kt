@@ -7,6 +7,8 @@ import android.opengl.GLES20
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.Toast
+import com.excalibur.funwithgles.App
 import com.excalibur.funwithgles.R
 import com.excalibur.funwithgles.opengl_slide_show.adapter.InfoPathAdapter
 import com.excalibur.funwithgles.opengl_slide_show.base.BaseFragment
@@ -40,6 +42,13 @@ class EditFragment : BaseFragment(), SurfaceHolder.Callback {
         initLinkAdapter()
         //initTextureView()
         //updateSizeTexture()
+        btnPlay.setOnClickListener {
+            if(mSurfaceHolderReady){
+                play()
+            }else{
+                Toast.makeText(App.self(),"Surface Holder Not Ready!",Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     private fun initSurfaceView() {
@@ -109,7 +118,7 @@ class EditFragment : BaseFragment(), SurfaceHolder.Callback {
         setupVideo(mainViewModel.listPath.value!![0])
 
         Log.e("HVV1312", "surfaceCreated")
-        play()
+        //play()
     }
 
     override fun surfaceChanged(holder: SurfaceHolder?, format: Int, width: Int, height: Int) {
