@@ -14,4 +14,75 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
     </style>
 
+    <style name="TwoLineListItemContainer">
+        <item name="android:layout_height">72dp</item>
+        <item name="android:minHeight">72dp</item>
+    </style>
+
+    <style name="TextStyleListItemPrimaryRow">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DefaultCoordinatorLayoutStyle">
+        <item name="android:id">@id/coordinatorlayout</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="DefaultAppBarLayoutStyle">
+        <item name="android:id">@id/appbarlayout</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DefaultToolbarStyle">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="navigationIcon">@drawable/ic_menu_white_24dp</item>
+    </style>
+
+    <style name="ActionProgressBarStyle">
+        <item name="android:id">@id/actionprogressbar</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="TextStyleCaption">
+    </style>
+    <style name="TextStyleBody2">
+    </style>
+
+    <style name="DefaultSDMRecyclerViewStyle">
+        <item name="android:id">@id/recyclerview</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">84dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="DefaultFastScrollerStyle">
+        <item name="android:layout_gravity">top|left|right|center_vertical|center_horizontal|fill_horizontal|center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@id/fastscroller</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="fastscroll__handleColor">@color/accent_default</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+    </style>
+
+
+
+    <item name="appbarlayout" type="id" />
+    <item name="coordinatorlayout" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="actionprogressbar" type="id" />
+    <item name="fastscroller" type="id" />
 </resources>

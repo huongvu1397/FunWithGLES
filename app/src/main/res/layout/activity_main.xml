@@ -52,9 +52,15 @@
             android:text="@string/sdmaid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnDropBox"
+            android:text="@string/dropbox"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnDropBox2"
+            android:text="@string/dropbox2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

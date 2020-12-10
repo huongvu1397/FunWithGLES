@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/apb_message"
+        style="@style/TextStyleBody2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:text="@string/progress_working"
+        app:layout_constraintBottom_toTopOf="@+id/apb_submessage"
+        app:layout_constraintEnd_toStartOf="@+id/apb_counter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginBottom="8dp"
+        app:layout_goneMarginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/apb_submessage"
+        style="@style/TextStyleCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:text="@string/progress_working"
+        app:layout_constraintBottom_toBottomOf="@+id/apb_progressbar"
+        app:layout_constraintEnd_toStartOf="@+id/apb_cancelbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apb_message"
+        app:layout_goneMarginBottom="8dp"
+        app:layout_goneMarginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/apb_counter"
+        style="@style/TextStyleCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toStartOf="@+id/apb_cancelbox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="16dp" />
+
+    <FrameLayout
+        android:id="@+id/apb_cancelbox"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_cancel_white_24dp" />
+    </FrameLayout>
+
+    <com.excalibur.funwithgles.sdmaidpro.ui.SDMProgressBar
+        android:id="@+id/apb_progressbar"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</merge>

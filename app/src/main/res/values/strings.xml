@@ -10,4 +10,18 @@
     <string name="next">Next</string>
     <string name="play">Play</string>
     <string name="sdmaid">SDMaid</string>
+
+
+    <string name="navigation_label_corpsefinder">CorpseFinder</string>
+    <string name="progress_working">Working</string>
+    <string name="button_scan">Scan</string>
+    <string name="navigationlabel_appcontrol">AppControl</string>
+    <string name="sort_mode">Sort mode</string>
+    <string name="navigation_label_appcontrol">AppControl</string>
+    <string name="login">Login</string>
+    <string name="app_key">wi6xfhbyqas42h2</string>
+    <string name="dropbox">DropBox</string>
+    <string name="dropbox2">DropBox2</string>
+
+
 </resources>

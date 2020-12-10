@@ -6,6 +6,8 @@ import android.os.Bundle
 import com.excalibur.funwithgles.chp1.GettingStarted
 import com.excalibur.funwithgles.drawbitmap.SlideShowActivity
 import com.excalibur.funwithgles.drawtriangle.DrawTriangleActivity
+import com.excalibur.funwithgles.dropbox.FilesActivity
+import com.excalibur.funwithgles.dropbox.TestDropBoxActivity
 import com.excalibur.funwithgles.gpuimageslide.GPUImageSlideActivity
 import com.excalibur.funwithgles.opengl_slide_show.HomeSlideActivity
 import com.excalibur.funwithgles.opgl1_init.InitOpenGLActivity
@@ -40,6 +42,15 @@ class MainActivity : AppCompatActivity() {
         }
         btnSDMaid.setOnClickListener {
             startActivity(Intent(this, SDMaidPro::class.java))
+        }
+        btnSDMaid.setOnClickListener {
+            startActivity(Intent(this, SDMaidPro::class.java))
+        }
+        btnDropBox.setOnClickListener {
+            startActivity(Intent(this, TestDropBoxActivity::class.java))
+        }
+        btnDropBox2.setOnClickListener {
+            startActivity(Intent(this, FilesActivity::class.java))
         }
     }
 }

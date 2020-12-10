@@ -4,17 +4,16 @@
     package="com.excalibur.funwithgles">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
         tools:ignore="ProtectedPermissions" />
-
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
-    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
-    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
-
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
 
     <application
         android:name=".App"
@@ -25,6 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".dropbox.TestDropBoxActivity"></activity>
         <activity android:name=".sdmaidpro.SDMaidPro" />
         <activity android:name=".opengl_slide_show.HomeSlideActivity" />
         <activity android:name=".drawtriangle.DrawTriangleActivity" />
@@ -35,6 +35,7 @@
         <activity android:name=".opgl1_init.InitOpenGLActivity" />
         <activity android:name=".opgl1_airhockey.AirHockeyActivity" />
         <activity android:name=".chp1.GettingStarted" />
+        <activity android:name=".dropbox.FilesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +43,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.dropbox.core.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-wi6xfhbyqas42h2" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

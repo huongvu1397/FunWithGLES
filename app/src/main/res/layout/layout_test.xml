@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DefaultCoordinatorLayoutStyle"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout style="@style/DefaultAppBarLayoutStyle">
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/DefaultToolbarStyle"
+            app:navigationIcon="@drawable/ic_ghost_white_24dp"
+            app:title="@string/navigation_label_corpsefinder" />
+
+        <com.excalibur.funwithgles.sdmaidpro.ui.WorkerStatusBar style="@style/ActionProgressBarStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<!--        <eu.thedarken.sdm.ui.ToolIntroView-->
+<!--            android:id="@+id/toolintro"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:toolIntroDescription="@string/corpsefinder_explanation"-->
+<!--            app:toolIntroIcon="@drawable/ic_ghost_white_24dp"-->
+<!--            app:toolIntroTitle="@string/navigation_label_corpsefinder" />-->
+
+        <androidx.recyclerview.widget.RecyclerView style="@style/DefaultSDMRecyclerViewStyle" />
+
+        <com.futuremind.recyclerviewfastscroll.FastScroller style="@style/DefaultFastScrollerStyle" />
+    </FrameLayout>
+
+    <com.excalibur.funwithgles.sdmaidpro.ui.SDMFAB
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end"
+        android:layout_margin="16dp"
+        app:layout_anchor="@+id/recyclerview"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
