@@ -7,7 +7,7 @@ import java.util.Locale;
 public final class SmartSizeTask {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Collection<p> f3884a;
+    public final Collection<SDMFile> f3884a;
 
     /* renamed from: b  reason: collision with root package name */
     public final boolean f3885b;
@@ -24,12 +24,12 @@ public final class SmartSizeTask {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Collection<p> f3886a;
+        final Collection<SDMFile> f3886a;
 
         /* renamed from: b  reason: collision with root package name */
         public boolean f3887b = false;
 
-        public a(Collection<p> collection) {
+        public a(Collection<SDMFile> collection) {
             this.f3886a = collection;
         }
     }

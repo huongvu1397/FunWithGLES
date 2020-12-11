@@ -4,9 +4,9 @@ import java.util.Collection;
 
 /* compiled from: SmartDeleteResult */
 public interface SmartDeleteResult extends SmartTask.a {
-    Collection<p> a();
+    Collection<SDMFile> a();
 
-    Collection<p> b();
+    Collection<SDMFile> b();
 
     long c();
 }

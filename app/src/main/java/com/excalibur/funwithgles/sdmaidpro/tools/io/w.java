@@ -7,7 +7,7 @@ import java.util.Collections;
 public final class w implements SmartTask {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Collection<p> f3874a;
+    public final Collection<SDMFile> f3874a;
 
     /* renamed from: b  reason: collision with root package name */
     public final boolean f3875b;
@@ -23,21 +23,21 @@ public final class w implements SmartTask {
         this.c = aVar.c;
     }
 
-    public static a a(p pVar) {
-        return new a(Collections.singleton(pVar));
+    public static a a(SDMFile SDMFileVar) {
+        return new a(Collections.singleton(SDMFileVar));
     }
 
     /* compiled from: SmartDeleteTask */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Collection<p> f3876a;
+        final Collection<SDMFile> f3876a;
 
         /* renamed from: b  reason: collision with root package name */
         public boolean f3877b;
         public boolean c;
 
-        a(Collection<p> collection) {
+        a(Collection<SDMFile> collection) {
             this.f3876a = collection;
         }
 

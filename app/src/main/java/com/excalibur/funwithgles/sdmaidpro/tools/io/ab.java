@@ -7,12 +7,12 @@ import java.util.Collections;
 public final class ab implements SmartTask {
 
     /* renamed from: a  reason: collision with root package name */
-    public final p f3823a;
+    public final SDMFile f3823a;
 
     /* renamed from: b  reason: collision with root package name */
     public final boolean f3824b;
     public final int c;
-    public final Collection<p> d;
+    public final Collection<SDMFile> d;
 
     /* compiled from: SmartTransactionTask */
     public enum b {
@@ -39,8 +39,8 @@ public final class ab implements SmartTask {
         this.f3824b = aVar.d;
     }
 
-    public static a a(p pVar, p pVar2) {
-        return new a(b.f3828b, Collections.singleton(pVar), pVar2);
+    public static a a(SDMFile SDMFileVar, SDMFile SDMFileVar2) {
+        return new a(b.f3828b, Collections.singleton(SDMFileVar), SDMFileVar2);
     }
 
     /* compiled from: SmartTransactionTask */
@@ -50,14 +50,14 @@ public final class ab implements SmartTask {
         final int f3825a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Collection<p> f3826b;
-        final p c;
+        final Collection<SDMFile> f3826b;
+        final SDMFile c;
         public boolean d;
 
-        public a(int i, Collection<p> collection, p pVar) {
+        public a(int i, Collection<SDMFile> collection, SDMFile SDMFileVar) {
             this.f3825a = i;
             this.f3826b = collection;
-            this.c = pVar;
+            this.c = SDMFileVar;
         }
 
         public final TransactionResult a(TransactionTool transactionToolVar) {

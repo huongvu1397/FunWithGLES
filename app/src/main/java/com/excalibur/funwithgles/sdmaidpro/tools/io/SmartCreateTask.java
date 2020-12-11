@@ -4,7 +4,7 @@ package com.excalibur.funwithgles.sdmaidpro.tools.io;
 public final class SmartCreateTask implements SmartTask {
 
     /* renamed from: a  reason: collision with root package name */
-    public final p f3868a;
+    public final SDMFile f3868a;
 
     /* renamed from: b  reason: collision with root package name */
     public final boolean f3869b;
@@ -34,8 +34,8 @@ public final class SmartCreateTask implements SmartTask {
         this.d = aVar.d;
     }
 
-    public static a a(p pVar) {
-        return new a(b.f3873b, pVar);
+    public static a a(SDMFile SDMFileVar) {
+        return new a(b.f3873b, SDMFileVar);
     }
 
     /* compiled from: SmartCreateTask */
@@ -45,13 +45,13 @@ public final class SmartCreateTask implements SmartTask {
         final int f3870a;
 
         /* renamed from: b  reason: collision with root package name */
-        final p f3871b;
+        final SDMFile f3871b;
         public boolean c;
         public boolean d;
 
-        public a(int i, p pVar) {
+        public a(int i, SDMFile SDMFileVar) {
             this.f3870a = i;
-            this.f3871b = pVar;
+            this.f3871b = SDMFileVar;
         }
 
         public final CreateResult a(CreateTool createToolVar) {

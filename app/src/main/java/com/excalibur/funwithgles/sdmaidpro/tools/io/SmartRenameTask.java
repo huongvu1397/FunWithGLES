@@ -4,7 +4,7 @@ package com.excalibur.funwithgles.sdmaidpro.tools.io;
 public final class SmartRenameTask implements SmartTask {
 
     /* renamed from: a  reason: collision with root package name */
-    public final p f3880a;
+    public final SDMFile f3880a;
 
     /* renamed from: b  reason: collision with root package name */
     public final String f3881b;
@@ -20,14 +20,14 @@ public final class SmartRenameTask implements SmartTask {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        p f3882a;
+        SDMFile f3882a;
 
         /* renamed from: b  reason: collision with root package name */
         String f3883b;
         public boolean c;
 
-        public a(p pVar, String str) {
-            this.f3882a = pVar;
+        public a(SDMFile SDMFileVar, String str) {
+            this.f3882a = SDMFileVar;
             this.f3883b = str;
         }
     }

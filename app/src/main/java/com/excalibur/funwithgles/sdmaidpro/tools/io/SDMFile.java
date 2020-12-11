@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /* compiled from: SDMFile */
-public interface p extends Parcelable {
+public interface SDMFile extends Parcelable {
     public static final DateFormat g = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss", Locale.US);
 
     long a();
@@ -27,7 +27,7 @@ public interface p extends Parcelable {
 
     String f();
 
-    p g();
+    SDMFile g();
 
     boolean h();
 
@@ -49,7 +49,7 @@ public interface p extends Parcelable {
 
     String q();
 
-    p r();
+    SDMFile r();
 
     String s();
 }

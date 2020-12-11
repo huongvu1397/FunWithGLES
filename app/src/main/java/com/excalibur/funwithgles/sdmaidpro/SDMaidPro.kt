@@ -27,13 +27,15 @@ class SDMaidPro : AppCompatActivity() {
         )
 
         if(mode == AppOpsManager.MODE_ALLOWED){
-
+            loadPublicData()
         }else{
             //request permission
             startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
         }
 
+    }
 
+    private fun loadPublicData(){
 
     }
 
