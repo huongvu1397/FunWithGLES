@@ -184,4 +184,15 @@
     <dimen name="global_padding">16dp</dimen>
     <dimen name="thumbnail_size">36dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="beauty_list_item_dot_size">3dp</dimen>
+    <dimen name="edit_photo_edit_view_holder_width">47dp</dimen>
+    <dimen name="edit_photo_edit_list_height">68dp</dimen>
+    <dimen name="edit_crop_bottom_feature_area_height">167dp</dimen>
+    <dimen name="bottom_confirm_cancel_area_height">52dp</dimen>
+
+
+
+
+
 </resources>

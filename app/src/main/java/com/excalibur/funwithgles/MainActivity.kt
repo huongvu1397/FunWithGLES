@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.excalibur.funwithgles.chp1.GettingStarted
+import com.excalibur.funwithgles.cropimage.UCropActivity
 import com.excalibur.funwithgles.drawbitmap.SlideShowActivity
 import com.excalibur.funwithgles.drawtriangle.DrawTriangleActivity
 import com.excalibur.funwithgles.dropbox.FilesActivity
@@ -51,6 +52,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnDropBox2.setOnClickListener {
             startActivity(Intent(this, FilesActivity::class.java))
+        }
+        btnCrop.setOnClickListener {
+            startActivity(Intent(this, UCropActivity::class.java))
         }
     }
 }

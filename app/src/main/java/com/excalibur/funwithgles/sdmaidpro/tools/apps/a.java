@@ -2,12 +2,12 @@ package com.excalibur.funwithgles.sdmaidpro.tools.apps;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.IPackageDataObserver;
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageStats;
 import android.net.Uri;
+import android.os.RemoteException;
 import android.util.Log;
 
 import com.excalibur.funwithgles.App;
@@ -40,16 +40,23 @@ public final class a {
                 }
                 Method method = declaredMethods[i];
                 if (method.getName().equals("freeStorageAndNotify")) {
-                    Object r0 = new IPackageDataObserver.Stub() {
-                        public final void onRemoveCompleted(String str, boolean z) {
-                            //a.b b2 = b.a.a.b(a.f3557a);
-                            //b2.b(str + " success:" + z, new Object[0]);
-                            Log.e("HVV1312","success: "+z+ " object "+ new Object[0]);
+                    Object r0 = new IPackageStatsObserver.Stub() {
+                        @Override
+                        public void onGetStatsCompleted(PackageStats pStats, boolean succeeded) throws RemoteException {
+                            Log.e("HVV1312","success: "+succeeded+ " object "+ new Object[0]);
                             synchronized (obj) {
                                 obj.notify();
                             }
                         }
+
+                        public final void onRemoveCompleted(String str, boolean z) {
+                            //a.b b2 = b.a.a.b(a.f3557a);
+                            //b2.b(str + " success:" + z, new Object[0]);
+                        }
                     };
+
+
+
                     if (method.getGenericParameterTypes().length == 2) {
                         try {
                             method.invoke(packageManager, new Object[]{Long.MAX_VALUE, r0});

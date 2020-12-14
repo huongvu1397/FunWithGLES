@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.excalibur.funwithgles.cropimage.b612crop.view.CropView
+        android:id="@+id/edit_crop_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_feature_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_feature_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/edit_crop_bottom_feature_area_height" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/area_crop_bottom_feature"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_crop_bottom_feature_area_height"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/crop_item_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_photo_edit_list_height"
+            app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6.5dp"
+            app:layout_constraintBottom_toTopOf="@+id/crop_item_recycler_view"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.excalibur.funwithgles.cropimage.b612crop.view.CropAngleView
+            android:id="@+id/crop_angle_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/crop_item_recycler_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_rotate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:src="@color/colorPrimary"
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/bottom_confirm_cancel_area_height"
+            android:layout_height="@dimen/bottom_confirm_cancel_area_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Crop"
+            android:textColor="#fefefe"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+            app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+            app:layout_constraintRight_toLeftOf="@+id/btn_confirm"
+            app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+        <ImageView
+            android:src="@color/colorPrimary"
+            android:id="@+id/btn_confirm"
+            android:layout_width="@dimen/bottom_confirm_cancel_area_height"
+            android:layout_height="@dimen/bottom_confirm_cancel_area_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
